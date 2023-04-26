@@ -8,6 +8,7 @@ const SignUp = () => {
 
     const { createUser, setUser } = useContext(AuthContext)
     const [error, setError] = useState(null)
+    const navigate = useNavigate()
 
 
     const handleSignUp = event => {
@@ -27,6 +28,7 @@ const SignUp = () => {
                 const loggedUser = result.user
                 console.log(loggedUser)
                 form.reset()
+                navigate('/')
             })
             .catch(error => {
                 setError(error.message)

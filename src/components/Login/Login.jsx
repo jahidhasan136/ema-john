@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useState } from 'react';
 import './Login.css'
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import google from '../../assets/google.png';
 import { AuthContext } from '../Providers/AuthProviders';
 import { sendPasswordResetEmail, getAuth } from 'firebase/auth';
@@ -13,8 +13,6 @@ const Login = () => {
     const auth = getAuth()
     const emailRef = useRef()
     const navigate = useNavigate()
-
-    const location = useLocation()
 
     const signIn = event => {
         event.preventDefault()
