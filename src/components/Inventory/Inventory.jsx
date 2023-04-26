@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 
 const Inventory = () => {
+
+    
     return (
-        <div>
-            <h3>Inventory page</h3>
-        </div>
+        <div></div>
     );
 };
 
