@@ -127,3 +127,7 @@ form {
     letter-spacing: 0.005em;
     color: #2A414F;
 }
+
+.reset{
+    font-weight: bold;
+}

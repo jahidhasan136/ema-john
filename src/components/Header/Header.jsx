@@ -21,10 +21,15 @@ const Header = () => {
                 <Link to="/orders">Orders</Link>
                 <Link to="/inventory">Inventory</Link>
                 <div className='user'>
-                    <img src={userlogo} alt="" />
+                    <div className="dropdown">
+                        <img src={userlogo} alt="" />
+                        <div className="dropdown-content">
+                            <h4>Email:</h4>
+                        </div>
+                    </div>
                     {
                         user ? <Link onClick={handleSingOut} to="/login"><button>Log out</button></Link> :
-                            <Link to="/login"><button>Login</button></Link>
+                            ''
                     }
                     {
                         user ? null : <Link to="/signup"><button>Signup</button></Link>
