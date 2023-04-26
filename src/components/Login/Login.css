@@ -1,0 +1,129 @@
+.form-container {
+    width: 500px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    margin: 30px auto;
+    padding: 30px 0;
+}
+
+.form-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0.0025em;
+    color: #2A414F;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin: 0 43px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #2A414F;
+    margin-bottom: 9px;
+}
+
+.form-control input {
+    width: 415px;
+    height: 55px;
+    border: 1px solid #95A0A7;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+.btn input {
+    margin-top: 44px;
+    background: rgba(255, 153, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+}
+
+.btn input:hover {
+    background: rgba(255, 153, 0, 0.4);
+    border-radius: 5px;
+}
+
+.form-link {
+    width: 263px;
+    height: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.0025em;
+    color: #2A414F;
+    margin: 0 auto;
+}
+
+.signup-link {
+    color: #FF9900;
+}
+
+.horizontal-x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.horizontal-x h4 {
+    width: 16px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #95A0A7;
+}
+
+.border {
+    width: 145px;
+    height: 0px;
+    border: 1px solid #95A0A7;
+}
+
+.google-auth {
+    width: 415px;
+    height: 55px;
+    border: 1px solid #95A0A7;
+    border-radius: 5px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+.google-auth img {
+    width: 32px;
+    height: 32px;
+}
+
+.google-auth p {
+    width: 165px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #2A414F;
+}
