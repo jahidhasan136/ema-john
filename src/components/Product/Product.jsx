@@ -10,18 +10,20 @@ const Product = (props) => {
 
 
     return (
-        <div className='product'>
-            <img src={img} alt="" />
-            <div className='product-info'>
-                <h6 className='product-name'>{name}</h6>
-                <p>Price: ${price}</p>
-                <p>Manufacturer: {seller}</p>
-                <p>Rating: {ratings} Stars</p>
-            </div>
-            <button onClick={() => handleAddToCart(props.product)} className='btn-cart'>
-                Add to Cart
-                <FontAwesomeIcon icon={faShoppingCart} />
+        <div>
+            <div className='product'>
+                <img src={img} alt="" />
+                <div className='product-info'>
+                    <h6 className='product-name'>{name}</h6>
+                    <p>Price: ${price}</p>
+                    <p>Manufacturer: {seller}</p>
+                    <p>Rating: {ratings} Stars</p>
+                </div>
+                <button onClick={() => handleAddToCart(props.product)} className='btn-cart'>
+                    Add to Cart
+                    <FontAwesomeIcon icon={faShoppingCart} />
                 </button>
+            </div>
         </div>
     );
 };

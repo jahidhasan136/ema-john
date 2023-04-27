@@ -66,6 +66,9 @@ const Header = () => {
         </div>
                         <div className="dropdown-content">
                             {
+                                user && <h4>Name: {user.displayName}</h4>
+                            }
+                            {
                                 user && <h4>Email: {user.email}</h4>
                             }
                         </div>
