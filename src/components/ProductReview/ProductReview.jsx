@@ -3,6 +3,7 @@ import './ProductReview.css'
 import { FaRegStar, FaStar } from "react-icons/fa";
 import { useLoaderData } from 'react-router-dom';
 import { useState } from 'react';
+import taka from '../../assets/taka.png'
 import Rating from 'react-rating';
 
 const ProductReview = () => {
@@ -30,7 +31,7 @@ const ProductReview = () => {
             <img src={img} alt="" />
             <div className='product-details'>
                 <h2>{name}</h2>
-                <h4>${price}</h4>
+                <h4><img src={taka} alt="" />{price}</h4>
                 <p>{showInfo ? <div>{outputValue}</div> : 'There are no review yet*'}</p>
                 <div>
                     <p>Your rating*</p>

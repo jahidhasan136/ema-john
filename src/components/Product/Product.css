@@ -27,8 +27,15 @@
 .product-info{
     margin-left: 14px;
 }
+.product-info img{
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
 .product-info p{
     margin-top: 5px;
+    display: flex;
+    align-items: center;
 }
 .btn-cart{
     width: 94%;

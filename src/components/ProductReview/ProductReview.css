@@ -20,6 +20,15 @@
     font-size: 15px;
 }
 
+.product-details img{
+    width: 18px;
+    height: 18px;
+}
+.product-details h4{
+    display: flex;
+    align-items: center;
+}
+
 
 .text-warning {
     color: orange;

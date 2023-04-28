@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightFromBracket, faBuildingCircleArrowRight, faRightFromBracket, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import taka from '../../assets/taka.png'
 import './Product.css';
 import { Link } from 'react-router-dom';
 
@@ -15,7 +16,7 @@ const Product = (props) => {
             <img src={img} alt="" />
             <div className='product-info'>
                 <h6 className='product-name'>{name}</h6>
-                <p>Price: ${price}</p>
+                <p>Price: <img src={taka} alt="" />{price}</p>
                 <p>Manufacturer: {seller}</p>
             </div>
             <div className='btn-cart '>

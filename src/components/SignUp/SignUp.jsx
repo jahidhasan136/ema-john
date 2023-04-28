@@ -79,15 +79,6 @@ const SignUp = () => {
                 </div>
                 <h4 className='form-link'>Already have an account? <Link className='login' to="/login">Login</Link></h4>
                 <p><small>{error}</small></p>
-                <div className='horizontal-x'>
-                    <div className='border'></div>
-                    <h4>Or</h4>
-                    <div className='border'></div>
-                </div>
-                <div className='google-auth'>
-                    <img src={signUpGoogle} alt="" />
-                    <p>Continue with Google</p>
-                </div>
             </form>
         </div>
     );

@@ -6,6 +6,16 @@
     top: 0;
 }
 
+.cart img{
+    width: 18px;
+    height: 18px;
+}
+
+.cart p, h6{
+    display: flex;
+    align-items: center;
+}
+
 .btn-clear-cart {
     width: 90%;
     height: 56px;
