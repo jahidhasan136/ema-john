@@ -1,0 +1,23 @@
+.review-product{
+    display: flex;
+    gap: 50px;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+.review-product img{
+    width: 600px;
+    height: 600px;
+}
+
+.review-field{
+    display: grid;
+}
+
+.review-field textarea {
+    margin-bottom: 10px;
+}
+
+.text-warning {
+    color: orange;
+}
