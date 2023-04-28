@@ -16,6 +16,8 @@ import Checkout from './components/Checkout/Checkout';
 import SignUp from './components/SignUp/SignUp';
 import AuthProviders from './components/Providers/AuthProviders';
 import PrivateRoute from './Private/PrivateRoute';
+import ProductReview from './components/ProductReview/ProductReview';
+import productLoader from './loaders/productLoader';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,11 @@ const router = createBrowserRouter([
         path: 'orders',
         element: <PrivateRoute><Orders></Orders></PrivateRoute>,
         loader: cartProductsLoader
+      },
+      {
+        path: 'review/:id',
+        element: <ProductReview></ProductReview>,
+        loader: ({params}) => productLoader(params) 
       },
       {
         path: 'inventory',

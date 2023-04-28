@@ -6,6 +6,7 @@ import { AuthContext } from '../Providers/AuthProviders';
 
 const Header = () => {
     const { logOut, user } = useContext(AuthContext)
+    console.log(user)
 
     const handleSingOut = () => {
         logOut()
@@ -66,7 +67,7 @@ const Header = () => {
         </div>
                         <div className="dropdown-content">
                             {
-                                user && <h4>Name: {user.displayName}</h4>
+                                user === null ? '' : <h4>Name: {user?.displayName}</h4>
                             }
                             {
                                 user && <h4>Email: {user.email}</h4>
