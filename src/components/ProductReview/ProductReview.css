@@ -16,7 +16,10 @@
 
 .review-field textarea {
     margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
 }
+
 
 .text-warning {
     color: orange;
