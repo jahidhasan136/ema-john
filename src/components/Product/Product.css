@@ -1,5 +1,5 @@
 .product {
-    width: 300px;
+    width: 350px;
     height: 510px;
     border: 1px solid #95A0A7;
     border-radius: 8px;
@@ -7,7 +7,7 @@
 }
 
 .product img {
-    width: 286px;
+    width: 96%;
     height: 286px;
     margin: 7px;
     border-radius: 8px;
@@ -31,13 +31,23 @@
     margin-top: 5px;
 }
 .btn-cart{
-    width: 100%;
+    width: 94%;
     background: #FFE0B3;
     border: 1px solid #95A0A7;
     border-radius: 0px 0px 8px 8px;
+    padding: 0 10px;
     position: absolute;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.btn-cart:hover{
-    background-color: orange;
+
+.cart-item, .review{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    cursor: pointer;
 }
+
